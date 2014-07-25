@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADA11481982E6B400BE68E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11471982E6B400BE68E4 /* main.swift */; };
+		FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11491982E6B400BE68E4 /* AppDelegate.swift */; };
+		FADA114C1982E6B400BE68E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA114B1982E6B400BE68E4 /* Images.xcassets */; };
+		FADA114F1982E6B400BE68E4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADA114D1982E6B400BE68E4 /* MainMenu.xib */; };
+		FADA115B1982E6B400BE68E4 /* JlanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA115A1982E6B400BE68E4 /* JlanerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADA11551982E6B400BE68E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADA113A1982E6B400BE68E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADA11411982E6B400BE68E4;
+			remoteInfo = Jlaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADA11421982E6B400BE68E4 /* Jlaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jlaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA11461982E6B400BE68E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA11471982E6B400BE68E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FADA11491982E6B400BE68E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FADA114B1982E6B400BE68E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FADA114E1982E6B400BE68E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FADA11541982E6B400BE68E4 /* JlanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JlanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA11591982E6B400BE68E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA115A1982E6B400BE68E4 /* JlanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JlanerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADA113F1982E6B400BE68E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA11511982E6B400BE68E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADA11391982E6B400BE68E4 = {
+			isa = PBXGroup;
+			children = (
+				FADA11441982E6B400BE68E4 /* Jlaner */,
+				FADA11571982E6B400BE68E4 /* JlanerTests */,
+				FADA11431982E6B400BE68E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADA11431982E6B400BE68E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADA11421982E6B400BE68E4 /* Jlaner.app */,
+				FADA11541982E6B400BE68E4 /* JlanerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADA11441982E6B400BE68E4 /* Jlaner */ = {
+			isa = PBXGroup;
+			children = (
+				FADA11491982E6B400BE68E4 /* AppDelegate.swift */,
+				FADA114B1982E6B400BE68E4 /* Images.xcassets */,
+				FADA114D1982E6B400BE68E4 /* MainMenu.xib */,
+				FADA11451982E6B400BE68E4 /* Supporting Files */,
+			);
+			path = Jlaner;
+			sourceTree = "<group>";
+		};
+		FADA11451982E6B400BE68E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADA11461982E6B400BE68E4 /* Info.plist */,
+				FADA11471982E6B400BE68E4 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADA11571982E6B400BE68E4 /* JlanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADA115A1982E6B400BE68E4 /* JlanerTests.swift */,
+				FADA11581982E6B400BE68E4 /* Supporting Files */,
+			);
+			path = JlanerTests;
+			sourceTree = "<group>";
+		};
+		FADA11581982E6B400BE68E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADA11591982E6B400BE68E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADA11411982E6B400BE68E4 /* Jlaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA115E1982E6B400BE68E4 /* Build configuration list for PBXNativeTarget "Jlaner" */;
+			buildPhases = (
+				FADA113E1982E6B400BE68E4 /* Sources */,
+				FADA113F1982E6B400BE68E4 /* Frameworks */,
+				FADA11401982E6B400BE68E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jlaner;
+			productName = Jlaner;
+			productReference = FADA11421982E6B400BE68E4 /* Jlaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADA11531982E6B400BE68E4 /* JlanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA11611982E6B400BE68E4 /* Build configuration list for PBXNativeTarget "JlanerTests" */;
+			buildPhases = (
+				FADA11501982E6B400BE68E4 /* Sources */,
+				FADA11511982E6B400BE68E4 /* Frameworks */,
+				FADA11521982E6B400BE68E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADA11561982E6B400BE68E4 /* PBXTargetDependency */,
+			);
+			name = JlanerTests;
+			productName = JlanerTests;
+			productReference = FADA11541982E6B400BE68E4 /* JlanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADA113A1982E6B400BE68E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alejandro Martinez";
+				TargetAttributes = {
+					FADA11411982E6B400BE68E4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					FADA11531982E6B400BE68E4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FADA11411982E6B400BE68E4;
+					};
+				};
+			};
+			buildConfigurationList = FADA113D1982E6B400BE68E4 /* Build configuration list for PBXProject "Jlaner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADA11391982E6B400BE68E4;
+			productRefGroup = FADA11431982E6B400BE68E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADA11411982E6B400BE68E4 /* Jlaner */,
+				FADA11531982E6B400BE68E4 /* JlanerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADA11401982E6B400BE68E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA114C1982E6B400BE68E4 /* Images.xcassets in Resources */,
+				FADA114F1982E6B400BE68E4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA11521982E6B400BE68E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADA113E1982E6B400BE68E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */,
+				FADA11481982E6B400BE68E4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA11501982E6B400BE68E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA115B1982E6B400BE68E4 /* JlanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADA11561982E6B400BE68E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADA11411982E6B400BE68E4 /* Jlaner */;
+			targetProxy = FADA11551982E6B400BE68E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADA114D1982E6B400BE68E4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADA114E1982E6B400BE68E4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADA115C1982E6B400BE68E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADA115D1982E6B400BE68E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FADA115F1982E6B400BE68E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Jlaner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADA11601982E6B400BE68E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Jlaner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FADA11621982E6B400BE68E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jlaner.app/Contents/MacOS/Jlaner";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JlanerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		FADA11631982E6B400BE68E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jlaner.app/Contents/MacOS/Jlaner";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JlanerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADA113D1982E6B400BE68E4 /* Build configuration list for PBXProject "Jlaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA115C1982E6B400BE68E4 /* Debug */,
+				FADA115D1982E6B400BE68E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADA115E1982E6B400BE68E4 /* Build configuration list for PBXNativeTarget "Jlaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA115F1982E6B400BE68E4 /* Debug */,
+				FADA11601982E6B400BE68E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADA11611982E6B400BE68E4 /* Build configuration list for PBXNativeTarget "JlanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA11621982E6B400BE68E4 /* Debug */,
+				FADA11631982E6B400BE68E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADA113A1982E6B400BE68E4 /* Project object */;
+}
