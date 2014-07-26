@@ -12,7 +12,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet weak var window: NSWindow!
 
-
+    @IBOutlet var origin: NSTextView!
+    @IBOutlet var destination: NSTextView!
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
     }
@@ -21,6 +23,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func generate(sender: AnyObject) {
+        
+        let converter = Converter(text: origin.string)
+        
+        destination.string = converter.convertToObjectiveC()
+    }
 }
 
