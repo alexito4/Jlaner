@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAD24F111983ABE40063440F /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD24F101983ABE40063440F /* Converter.swift */; };
+		FAD24F131983B2900063440F /* SynchroScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD24F121983B2900063440F /* SynchroScrollView.swift */; };
 		FADA11481982E6B400BE68E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11471982E6B400BE68E4 /* main.swift */; };
 		FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11491982E6B400BE68E4 /* AppDelegate.swift */; };
 		FADA114C1982E6B400BE68E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA114B1982E6B400BE68E4 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		FAD24F101983ABE40063440F /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		FAD24F121983B2900063440F /* SynchroScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchroScrollView.swift; sourceTree = "<group>"; };
 		FADA11421982E6B400BE68E4 /* Jlaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jlaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA11461982E6B400BE68E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADA11471982E6B400BE68E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				FADA11491982E6B400BE68E4 /* AppDelegate.swift */,
 				FADA114B1982E6B400BE68E4 /* Images.xcassets */,
 				FADA114D1982E6B400BE68E4 /* MainMenu.xib */,
+				FAD24F121983B2900063440F /* SynchroScrollView.swift */,
 				FADA11451982E6B400BE68E4 /* Supporting Files */,
 				FAD24F101983ABE40063440F /* Converter.swift */,
 			);
@@ -213,6 +216,7 @@
 			files = (
 				FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */,
 				FAD24F111983ABE40063440F /* Converter.swift in Sources */,
+				FAD24F131983B2900063440F /* SynchroScrollView.swift in Sources */,
 				FADA11481982E6B400BE68E4 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

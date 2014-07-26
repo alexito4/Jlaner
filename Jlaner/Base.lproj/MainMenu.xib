@@ -694,7 +694,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="299" height="404"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-k2-IRz">
+                                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-k2-IRz" customClass="SynchroScrollView" customModule="Jlaner" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="404"/>
                                         <clipView key="contentView" id="XEo-Sk-OT4">
                                             <rect key="frame" x="1" y="1" width="238" height="133"/>
@@ -721,6 +721,9 @@
                                             <rect key="frame" x="223" y="1" width="16" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
+                                        <connections>
+                                            <outlet property="synchronizedScrollView" destination="usz-al-6ib" id="JXT-lB-s3O"/>
+                                        </connections>
                                     </scrollView>
                                 </subviews>
                                 <constraints>
