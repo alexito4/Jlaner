@@ -37,6 +37,7 @@ class Converter {
         result = result.stringByReplacingOccurrencesOfString(" \"", withString: " @\"", options: nil, range: nil) // strings
         result = result.stringByReplacingOccurrencesOfString(" false", withString: " @NO", options: nil, range: nil) // bool
         result = result.stringByReplacingOccurrencesOfString(" true", withString: " @YES", options: nil, range: nil) // bool
+        result = result.stringByReplacingOccurrencesOfString(" null", withString: " [NSNull null]", options: nil, range: nil) // nulls
         
         // numbers
         let lenght = result.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
