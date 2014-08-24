@@ -14,10 +14,5 @@ class ConverterManager : NSObject {
     @IBOutlet var original: NSTextView!
     @IBOutlet var destination: NSTextView!
     
-    var bindableText: NSString? {
-        willSet {
-            println(newValue)
-        }
-    }
-
+    var bindableText: NSString?
 }

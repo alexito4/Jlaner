@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA30A5A219AA249A00DB24E9 /* ConverterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A119AA249A00DB24E9 /* ConverterManager.swift */; };
-		FA30A5A419AA287900DB24E9 /* ObjcTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A319AA287900DB24E9 /* ObjcTransformer.swift */; };
+		FA30A5A719AA32E200DB24E9 /* ObjcTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */; };
 		FAD24F131983B2900063440F /* SynchroScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD24F121983B2900063440F /* SynchroScrollView.swift */; };
 		FADA11481982E6B400BE68E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11471982E6B400BE68E4 /* main.swift */; };
 		FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA11491982E6B400BE68E4 /* AppDelegate.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		FA30A5A119AA249A00DB24E9 /* ConverterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterManager.swift; sourceTree = "<group>"; };
-		FA30A5A319AA287900DB24E9 /* ObjcTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcTransformer.swift; sourceTree = "<group>"; };
+		FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcTransformer.swift; sourceTree = "<group>"; };
 		FAD24F121983B2900063440F /* SynchroScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchroScrollView.swift; sourceTree = "<group>"; };
 		FADA11421982E6B400BE68E4 /* Jlaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jlaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA11461982E6B400BE68E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA30A5A519AA32E200DB24E9 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
 		FADA11391982E6B400BE68E4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +89,13 @@
 		FADA11441982E6B400BE68E4 /* Jlaner */ = {
 			isa = PBXGroup;
 			children = (
-				FADA11491982E6B400BE68E4 /* AppDelegate.swift */,
-				FADA114B1982E6B400BE68E4 /* Images.xcassets */,
-				FADA114D1982E6B400BE68E4 /* MainMenu.xib */,
-				FAD24F121983B2900063440F /* SynchroScrollView.swift */,
-				FADA11451982E6B400BE68E4 /* Supporting Files */,
 				FA30A5A119AA249A00DB24E9 /* ConverterManager.swift */,
-				FA30A5A319AA287900DB24E9 /* ObjcTransformer.swift */,
+				FA30A5A519AA32E200DB24E9 /* Transformers */,
+				FAD24F121983B2900063440F /* SynchroScrollView.swift */,
+				FADA11491982E6B400BE68E4 /* AppDelegate.swift */,
+				FADA114D1982E6B400BE68E4 /* MainMenu.xib */,
+				FADA114B1982E6B400BE68E4 /* Images.xcassets */,
+				FADA11451982E6B400BE68E4 /* Supporting Files */,
 			);
 			path = Jlaner;
 			sourceTree = "<group>";
@@ -217,9 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA30A5A719AA32E200DB24E9 /* ObjcTransformer.swift in Sources */,
 				FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */,
 				FA30A5A219AA249A00DB24E9 /* ConverterManager.swift in Sources */,
-				FA30A5A419AA287900DB24E9 /* ObjcTransformer.swift in Sources */,
 				FAD24F131983B2900063440F /* SynchroScrollView.swift in Sources */,
 				FADA11481982E6B400BE68E4 /* main.swift in Sources */,
 			);

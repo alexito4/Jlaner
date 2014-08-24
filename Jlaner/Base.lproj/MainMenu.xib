@@ -683,13 +683,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="605" height="425"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bub-0B-cKo">
-                        <rect key="frame" x="210" y="377" width="186" height="32"/>
-                        <buttonCell key="cell" type="push" title="Convert to Objective-C" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4nO-50-DZB">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
                     <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-rV-deW">
                         <rect key="frame" x="0.0" y="0.0" width="605" height="364"/>
                         <subviews>
@@ -703,7 +696,7 @@
                                             <rect key="frame" x="1" y="1" width="238" height="133"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="aew-dW-Gwh">
+                                                <textView importsGraphics="NO" richText="NO" findStyle="panel" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="aew-dW-Gwh">
                                                     <rect key="frame" x="0.0" y="0.0" width="238" height="402"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -797,36 +790,12 @@
                             <real value="250"/>
                         </holdingPriorities>
                     </splitView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Itk-O1-KAy">
-                        <rect key="frame" x="18" y="372" width="128" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Paste the JSON here" placeholderString="" id="701-yP-O14">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-TN-E9h">
-                        <rect key="frame" x="531" y="370" width="56" height="18"/>
-                        <buttonCell key="cell" type="check" title="Add ;" bezelStyle="regularSquare" imagePosition="left" alignment="left" id="Jwt-cd-O23">
-                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="endSemicolonAction:" target="Voe-Tx-rLC" id="3wq-KF-YlF"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Itk-O1-KAy" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="2l7-iF-1JZ"/>
+                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="61" id="4ej-Zz-Bdg"/>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="8ii-7b-zAR"/>
-                    <constraint firstItem="bub-0B-cKo" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="F9l-ug-ckp"/>
-                    <constraint firstAttribute="trailing" secondItem="saQ-TN-E9h" secondAttribute="trailing" constant="20" symbolic="YES" id="FSX-7h-zk0"/>
                     <constraint firstAttribute="bottom" secondItem="8ui-rV-deW" secondAttribute="bottom" id="GZI-CQ-Dhw"/>
                     <constraint firstAttribute="trailing" secondItem="8ui-rV-deW" secondAttribute="trailing" id="QrK-AD-QDh"/>
-                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="bub-0B-cKo" secondAttribute="bottom" constant="20" symbolic="YES" id="Wcw-A3-nM4"/>
-                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="Itk-O1-KAy" secondAttribute="bottom" constant="8" symbolic="YES" id="anq-a0-Rxj"/>
-                    <constraint firstAttribute="centerX" secondItem="bub-0B-cKo" secondAttribute="centerX" id="b7s-Y6-0Oc"/>
-                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="saQ-TN-E9h" secondAttribute="bottom" constant="8" symbolic="YES" id="yyp-z5-Ii9"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="366.5" y="330.5"/>

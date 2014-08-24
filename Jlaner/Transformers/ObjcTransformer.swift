@@ -18,9 +18,7 @@ import Foundation
         return false
     }
     
-    override func transformedValue(value: AnyObject!) -> AnyObject! {
-        println("Update -\(value)- value")
-        
+    override func transformedValue(value: AnyObject!) -> AnyObject! {        
         if value == nil {
             return nil
         }
