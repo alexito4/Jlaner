@@ -28,10 +28,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func generate(sender: AnyObject) {
-        
-        let converter = Converter(text: origin.string)
-        
-        destination.string = converter.convertToObjectiveC()
+    }
+
+    @IBAction func endSemicolonAction(sender: NSButton) {
+        println(sender.state)
     }
 }
 

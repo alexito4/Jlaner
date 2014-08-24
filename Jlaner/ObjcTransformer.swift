@@ -1,36 +1,38 @@
 //
-//  Converter.swift
+//  ObjcTransformer.swift
 //  Jlaner
 //
-//  Created by Alejandro Martinez on 26/07/14.
+//  Created by Alejandro Martinez on 24/08/14.
 //  Copyright (c) 2014 Alejandro Martinez. All rights reserved.
 //
 
 import Foundation
 
-class Converter {
+@objc(ObjcTransformer) class ObjcTransformer : NSValueTransformer {
     
-    private let original: String
-    private let json: AnyObject?
-    
-    init(text: String) {
-        original = text
-        json = parseToJson()
+    override class func transformedValueClass() -> AnyClass! {
+        return NSString.self
     }
     
-    private func parseToJson() -> AnyObject? {
+    override class func allowsReverseTransformation() -> Bool {
+        return false
+    }
+    
+    override func transformedValue(value: AnyObject!) -> AnyObject! {
+        println("Update -\(value)- value")
+        
+        if value == nil {
+            return nil
+        }
+        
+        var result: String = value as String
+        
         var error: NSError?
-        let json: AnyObject! = NSJSONSerialization.JSONObjectWithData(original.dataUsingEncoding(NSUTF8StringEncoding), options:NSJSONReadingOptions.MutableContainers, error: &error)
+        let json: AnyObject! = NSJSONSerialization.JSONObjectWithData(result.dataUsingEncoding(NSUTF8StringEncoding), options:NSJSONReadingOptions.MutableContainers, error: &error)
         if !json {
             println("Error parsing JSON")
             return nil
-        } else {
-            return json
         }
-    }
-    
-    func convertToObjectiveC() -> String? {
-        var result = original
         
         result = result.stringByReplacingOccurrencesOfString("[", withString: "@[", options: nil, range: nil) // arrays
         result = result.stringByReplacingOccurrencesOfString("{", withString: "@{", options: nil, range: nil) // objects
@@ -45,7 +47,7 @@ class Converter {
         let pattern = "[\\s]([-]?[0-9]*\\.?[0-9]*)[,]"
         let exp = NSRegularExpression(pattern: pattern, options: nil, error: nil)
         result = exp.stringByReplacingMatchesInString(result, options: nil, range: NSMakeRange(0, result.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)), withTemplate: " @($1),")
-
+        
         return result
     }
 }

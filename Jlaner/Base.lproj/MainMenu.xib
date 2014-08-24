@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6185.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6205"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -19,6 +19,12 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="APf-oq-21H" customClass="ConverterManager" customModule="Jlaner" customModuleProvider="target">
+            <connections>
+                <outlet property="destination" destination="soe-I7-mu3" id="r8l-xi-vo2"/>
+                <outlet property="original" destination="aew-dW-Gwh" id="OUS-HS-73Z"/>
+            </connections>
+        </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="Jlaner" id="1Xt-HY-uBw">
@@ -670,8 +676,7 @@
         </menu>
         <window title="Jlaner" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="605" height="425"/>
+            <rect key="contentRect" x="304" y="177" width="605" height="425"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="605" height="425"/>
             <view key="contentView" id="EiT-Mj-1SZ">
@@ -684,9 +689,6 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
-                        <connections>
-                            <action selector="generate:" target="Voe-Tx-rLC" id="Zud-qA-huL"/>
-                        </connections>
                     </button>
                     <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-rV-deW">
                         <rect key="frame" x="0.0" y="0.0" width="605" height="364"/>
@@ -701,7 +703,7 @@
                                             <rect key="frame" x="1" y="1" width="238" height="133"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="aew-dW-Gwh">
+                                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="aew-dW-Gwh">
                                                     <rect key="frame" x="0.0" y="0.0" width="238" height="402"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -710,6 +712,13 @@
                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="minSize" width="282" height="362"/>
                                                     <size key="maxSize" width="463" height="10000000"/>
+                                                    <connections>
+                                                        <binding destination="APf-oq-21H" name="value" keyPath="self.bindableText" id="PJa-mX-9f6">
+                                                            <dictionary key="options">
+                                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                            </dictionary>
+                                                        </binding>
+                                                    </connections>
                                                 </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -744,7 +753,7 @@
                                             <rect key="frame" x="1" y="1" width="238" height="133"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="soe-I7-mu3">
+                                                <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="soe-I7-mu3">
                                                     <rect key="frame" x="0.0" y="0.0" width="238" height="402"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -753,6 +762,14 @@
                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="minSize" width="279" height="362"/>
                                                     <size key="maxSize" width="463" height="10000000"/>
+                                                    <connections>
+                                                        <binding destination="APf-oq-21H" name="value" keyPath="self.bindableText" id="vBV-Dw-49p">
+                                                            <dictionary key="options">
+                                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                                <string key="NSValueTransformerName">ObjcTransformer</string>
+                                                            </dictionary>
+                                                        </binding>
+                                                    </connections>
                                                 </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -781,26 +798,39 @@
                         </holdingPriorities>
                     </splitView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Itk-O1-KAy">
-                        <rect key="frame" x="18" y="372" width="72" height="17"/>
+                        <rect key="frame" x="18" y="372" width="128" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Paste the JSON here" placeholderString="" id="701-yP-O14">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-TN-E9h">
+                        <rect key="frame" x="531" y="370" width="56" height="18"/>
+                        <buttonCell key="cell" type="check" title="Add ;" bezelStyle="regularSquare" imagePosition="left" alignment="left" id="Jwt-cd-O23">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="endSemicolonAction:" target="Voe-Tx-rLC" id="3wq-KF-YlF"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Itk-O1-KAy" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="2l7-iF-1JZ"/>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="8ii-7b-zAR"/>
                     <constraint firstItem="bub-0B-cKo" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="F9l-ug-ckp"/>
+                    <constraint firstAttribute="trailing" secondItem="saQ-TN-E9h" secondAttribute="trailing" constant="20" symbolic="YES" id="FSX-7h-zk0"/>
                     <constraint firstAttribute="bottom" secondItem="8ui-rV-deW" secondAttribute="bottom" id="GZI-CQ-Dhw"/>
                     <constraint firstAttribute="trailing" secondItem="8ui-rV-deW" secondAttribute="trailing" id="QrK-AD-QDh"/>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="bub-0B-cKo" secondAttribute="bottom" constant="20" symbolic="YES" id="Wcw-A3-nM4"/>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="Itk-O1-KAy" secondAttribute="bottom" constant="8" symbolic="YES" id="anq-a0-Rxj"/>
                     <constraint firstAttribute="centerX" secondItem="bub-0B-cKo" secondAttribute="centerX" id="b7s-Y6-0Oc"/>
+                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="saQ-TN-E9h" secondAttribute="bottom" constant="8" symbolic="YES" id="yyp-z5-Ii9"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="395.5" y="147.5"/>
+            <point key="canvasLocation" x="366.5" y="330.5"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="eba-6h-QXb"/>
     </objects>
 </document>
