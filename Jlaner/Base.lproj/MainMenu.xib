@@ -756,7 +756,7 @@
                                                     <size key="minSize" width="279" height="362"/>
                                                     <size key="maxSize" width="463" height="10000000"/>
                                                     <connections>
-                                                        <binding destination="APf-oq-21H" name="value" keyPath="self.bindableText" id="vBV-Dw-49p">
+                                                        <binding destination="APf-oq-21H" name="value" keyPath="self.bindableText" id="3mC-Jy-kd0">
                                                             <dictionary key="options">
                                                                 <bool key="NSContinuouslyUpdatesValue" value="YES"/>
                                                                 <string key="NSValueTransformerName">ObjcTransformer</string>

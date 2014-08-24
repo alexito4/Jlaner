@@ -6,18 +6,10 @@
 //  Copyright (c) 2014 Alejandro Martinez. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
-@objc(ObjcTransformer) class ObjcTransformer : NSValueTransformer {
-    
-    override class func transformedValueClass() -> AnyClass! {
-        return NSString.self
-    }
-    
-    override class func allowsReverseTransformation() -> Bool {
-        return false
-    }
-    
+@objc(ObjcTransformer) class ObjcTransformer : BaseTransformer {
+        
     override func transformedValue(value: AnyObject!) -> AnyObject! {        
         if value == nil {
             return nil
@@ -48,4 +40,5 @@ import Foundation
         
         return result
     }
+    
 }
