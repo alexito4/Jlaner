@@ -9,15 +9,32 @@
 import Cocoa
 
 @objc(SwiftTransformer) class SwiftTransformer: BaseTransformer {
-    override func transformedValue(value: AnyObject!) -> AnyObject! {
-        if value == nil {
-            return nil
-        }
-        
-        var result: String = value as String
-        
-        result += ":D"
-        
-        return result
+    
+    override func conversionForArrays() -> ConvertToCharacters {
+        return ("[", "]")
+    }
+    
+    override func conversionForObjects() -> ConvertToCharacters {
+        return ("[", "]")
+    }
+    
+    override func conversionForStrings() -> ConvertToCharacter {
+        return " \""
+    }
+    
+    override func conversionForFalse() -> ConvertToCharacter {
+        return " false"
+    }
+    
+    override func conversionForTrue() -> ConvertToCharacter {
+        return " true"
+    }
+    
+    override func conversionForNull() -> ConvertToCharacter {
+        return " nil"
+    }
+    
+    override func conversionForNumbers() -> ConvertToTemplate {
+        return " $1,"
     }
 }

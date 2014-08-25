@@ -42,7 +42,7 @@ class ConverterManager : NSObject {
 }
 
 extension ConverterManager {
-    func bindDestinationWithTransformable(transformableName : String) {
+    private func bindDestinationWithTransformable(transformableName : String) {
         destination.bind("value", toObject: self, withKeyPath: "bindableText", options: [
             NSAllowsEditingMultipleValuesSelectionBindingOption : true,
             NSAlwaysPresentsApplicationModalAlertsBindingOption : false,
