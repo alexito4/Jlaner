@@ -22,6 +22,7 @@
         <customObject id="APf-oq-21H" customClass="ConverterManager" customModule="Jlaner" customModuleProvider="target">
             <connections>
                 <outlet property="destination" destination="soe-I7-mu3" id="r8l-xi-vo2"/>
+                <outlet property="languagePopup" destination="1Lq-8a-Xdh" id="V7t-ZV-lhL"/>
                 <outlet property="original" destination="aew-dW-Gwh" id="OUS-HS-73Z"/>
             </connections>
         </customObject>
@@ -790,15 +791,28 @@
                             <real value="250"/>
                         </holdingPriorities>
                     </splitView>
+                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Lq-8a-Xdh">
+                        <rect key="frame" x="478" y="381" width="110" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="nn9-Yq-9wi">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="EXN-qa-8E5"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changed:" target="APf-oq-21H" id="1ww-Me-Ckc"/>
+                        </connections>
+                    </popUpButton>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="61" id="4ej-Zz-Bdg"/>
                     <constraint firstItem="8ui-rV-deW" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="8ii-7b-zAR"/>
                     <constraint firstAttribute="bottom" secondItem="8ui-rV-deW" secondAttribute="bottom" id="GZI-CQ-Dhw"/>
                     <constraint firstAttribute="trailing" secondItem="8ui-rV-deW" secondAttribute="trailing" id="QrK-AD-QDh"/>
+                    <constraint firstItem="8ui-rV-deW" firstAttribute="top" secondItem="1Lq-8a-Xdh" secondAttribute="bottom" constant="20" id="SGm-tw-wHh"/>
+                    <constraint firstAttribute="trailing" secondItem="1Lq-8a-Xdh" secondAttribute="trailing" constant="20" symbolic="YES" id="Tgw-Rq-Oxz"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="366.5" y="330.5"/>
+            <point key="canvasLocation" x="338.5" y="342.5"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="eba-6h-QXb"/>
     </objects>

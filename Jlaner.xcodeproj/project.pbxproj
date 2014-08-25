@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2A399519AA52EE0075461A /* SwiftTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A399419AA52EE0075461A /* SwiftTransformer.swift */; };
 		FA30A5A219AA249A00DB24E9 /* ConverterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A119AA249A00DB24E9 /* ConverterManager.swift */; };
 		FA30A5A719AA32E200DB24E9 /* ObjcTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */; };
 		FA30A5A919AA33AD00DB24E9 /* BaseTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30A5A819AA33AD00DB24E9 /* BaseTransformer.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA2A399419AA52EE0075461A /* SwiftTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTransformer.swift; sourceTree = "<group>"; };
 		FA30A5A119AA249A00DB24E9 /* ConverterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterManager.swift; sourceTree = "<group>"; };
 		FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcTransformer.swift; sourceTree = "<group>"; };
 		FA30A5A819AA33AD00DB24E9 /* BaseTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransformer.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				FA30A5A819AA33AD00DB24E9 /* BaseTransformer.swift */,
 				FA30A5A619AA32E200DB24E9 /* ObjcTransformer.swift */,
+				FA2A399419AA52EE0075461A /* SwiftTransformer.swift */,
 			);
 			path = Transformers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2A399519AA52EE0075461A /* SwiftTransformer.swift in Sources */,
 				FA30A5A919AA33AD00DB24E9 /* BaseTransformer.swift in Sources */,
 				FA30A5A719AA32E200DB24E9 /* ObjcTransformer.swift in Sources */,
 				FADA114A1982E6B400BE68E4 /* AppDelegate.swift in Sources */,
